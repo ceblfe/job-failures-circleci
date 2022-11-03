@@ -8,9 +8,9 @@ jobs:
     steps:
       - run: return 1
       - run:
-        name: on error
-        command: echo"Hello Error!"
-        when: on_fail
+          name: on error
+          command: echo "Hello Error!"
+          when: on_fail
 workflows:
   my_workflow:
     jobs:
